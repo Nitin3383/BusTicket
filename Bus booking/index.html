@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking</title>
+    <link rel="stylesheet" href="css/bootstrap5.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="background-img">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img class="logo" src="Images/bb.jpg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <div class="left">
+                    <li>Welcome:-
+                        <script>
+                            document.write(localStorage.getItem("name"));
+                        </script>
+                    </li>
+                </div>
+
+
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <section class="bus">
+        <h1>Book Your Bus Ticket!</h1>
+    </section>
+
+    <div class="destination">
+        <select class="form-select form-select-lg mb-3" id="gg" aria-label="Large select example"
+            style="background-color: grey ;margin-top: 2%;">
+            <option selected>From</option>
+            <option value="1">Delhi</option>
+            <option value="2">Chandigarh</option>
+            <option value="3">Shimla</option>
+        </select>
+
+        <select class="form-select form-select-lg mb-3" aria-label="Large select example"
+            style="background-color: grey ;">
+            <option selected>To</option>
+            <option value="1">Chnadigarh</option>
+            <option value="2">Delhi</option>
+            <option value="3">Shimla</option>
+        </select>
+
+        <input type="date" class="date">
+
+
+        <button type="button" onclick="bus()" class="btn btn-primary bt">Search</button>
+
+
+    </div>
+
+
+<div class="container-fluid">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Sr.No</th>
+            <th scope="col">From</th>
+            <th scope="col">To</th>
+            <th scope="col">Buses</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Chandigarh</td>
+            <td>Shimla</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Chandigarh</td>
+            <td>Shimla</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Chandigarh</td>
+            <td>Shimla</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/bus.js"></script>
+
+
+
+</body>
+
+</html>

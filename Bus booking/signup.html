@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/bootstrap5.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-img">
+    <div class="container-fluid">
+
+        <form class="mx-auto">
+            <h4 class="text-center">Sign-Up</h4>
+
+            <div class="col-9 offset-1">
+              <label for="exampleInputEmail1" class="form-label">User Name</label>
+              <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="User Name">
+              <p id="usererror" style="color: red;"></p>
+            </div>
+            
+            <div class="col-9 offset-1">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="useremail" aria-describedby="emailHelp" placeholder="Email">
+                <p id="emailerror" style="color:red;"></p>
+              </div>
+
+            
+            <div class="col-9 offset-1">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password">
+              <p id="pwderror" style="color: red;"></p>
+            </div>
+           
+            <button input type="button" onclick="validation() ,signup()"  value="" class="btn btn-success mt-4">SignUp</button>
+
+
+          </form>
+
+
+          
+
+    </div>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/signup.js"></script>
+
+</body>
+
+</html>

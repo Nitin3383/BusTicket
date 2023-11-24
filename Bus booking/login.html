@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap5.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-img">
+    <div class="container-fluid">
+
+        <form class="mx-auto" >
+            <h4 class="text-center">Login</h4>
+            <div class="col-9 offset-1" >
+              <label for="exampleInputEmail1" class="form-label">User Name</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <p id="usererror" style="color: brown;"></p>
+            </div>
+            <div class="col-9 offset-1">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password">
+              <p id="pwderror" style="color: brown;"></p>
+            </div>
+           
+            <a input type="button" onclick="loginform() ,login()"  value="" class="btn btn-primary mt-4">Login</a>
+
+            <a href="signup.html" button type="submit" class="btn btn-success mt-4">Create A New Account</button></a>
+
+          </form>
+
+
+          
+
+    </div>
+
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/login.js"></script>
+
+</body>
+
+</html>
